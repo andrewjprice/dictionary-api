@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/alexander-lukashenk_998764c.jpg">
+    <h1 class="h1">Nothing is more permanent than temporary</h1>
+    <Input />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Input from './components/Input.vue'
+require('dotenv').config();
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Input
   }
 }
 </script>
@@ -24,5 +25,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: teal;
+}
+
+.h1{
+  color: #fff;
+  font-weight: bold;
 }
 </style>
