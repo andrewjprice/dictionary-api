@@ -1,4 +1,6 @@
-# to-the-moon
+# dictionary-api
+
+Register at https://dictionaryapi.com/ to get API KEY and add it to the .env file.
 
 ## Project setup
 ```
