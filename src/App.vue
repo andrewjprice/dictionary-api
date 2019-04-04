@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/alexander-lukashenk_998764c.jpg">
+    <img alt="Vue logo" src="./assets/logo.png">
     <h1 class="h1">Nothing is more permanent than temporary</h1>
     <Input />
   </div>

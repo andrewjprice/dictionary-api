@@ -24,11 +24,11 @@ export default {
   methods: {
     onSubmit: function(e) {
       var word = e.target.value
-      var key = process.env.API_KEY
-      var url = process.env.BASE_URL
+      var key = process.env.VUE_APP_API_KEY
+      var url = process.env.VUE_APP_BASE_URL
 
       axios
-        .get(`https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word}?key=99779dfc-7950-4dc8-ab30-d75b13efd5ae`)
+        .get(`${url}${word}?key=${key}`)
         .then(response => {
           var data = response.data
           this.definition = data[0].shortdef[0]
